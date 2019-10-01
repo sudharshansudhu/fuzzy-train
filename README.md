@@ -13,3 +13,8 @@ This repo talks in detail about fuzzy logic
 
 ### Fuzzification
 * Fuzzification is the process of assigning the numerical input of a system to fuzzy sets with some degree of membership. This degree of membership may be anywhere within the interval [0,1]. If it is 0 then the value does not belong to the given fuzzy set, and if it is 1 then the value completely belongs within the fuzzy set. Any value between 0 and 1 represents the degree of uncertainty that the value belongs in the set. These fuzzy sets are typically described by words, and so by assigning the system input to fuzzy sets, we can reason with it in a linguistically natural manner.
+
+### Process
+1. Fuzzify all input values into fuzzy membership functions.
+1. Execute all applicable rules in the rulebase to compute the fuzzy output functions.
+1. De-fuzzify the fuzzy output functions to get "crisp" output values.
